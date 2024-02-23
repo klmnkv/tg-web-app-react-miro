@@ -13,8 +13,8 @@
 
       return (
         <div className="App">
-            <button onClick={onToggleButton}>toggle</button>
             <Header />
+            <button onClick={onToggleButton}>toggle</button>
         </div>
       );
     }
