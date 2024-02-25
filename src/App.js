@@ -19,7 +19,7 @@
             <Header />
             <Routes>
                 <Route index element={<ProductList />}/>
-                <Route path={'/form'} element={<Form />}/>
+                <Route path={'/Form'} element={<Form />}/>
             </Routes>
         </div>
       );
