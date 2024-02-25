@@ -4,7 +4,7 @@
     import Header from "./components/Header/Header";
     import {Route,Routes} from 'react-router-dom';
     import ProductList from "./components/ProductList/ProductList";
-    import Form from "./components/Form/Form";
+    import FormT from "./components/FormT/FormT";
 
 
 
@@ -20,7 +20,7 @@ function App() {
             <Header />
             <Routes>
                 <Route index element={<ProductList />}/>
-                <Route path={'form'} element={<Form />}/>
+                <Route path={'formt'} element={<FormT />}/>
             </Routes>
         </div>
     );
