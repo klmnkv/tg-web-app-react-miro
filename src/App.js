@@ -7,22 +7,23 @@
     import Form from "./components/Form/Form";
 
 
-    const tg = window.Telegram.WebApp;
-    function App() {
-        const {onToggleButton, tg} = userTelegram();
-        useEffect(() => {
-            tg.ready();
-            },[])
 
-      return (
+function App() {
+    const {onToggleButton, tg} = userTelegram();
+
+    useEffect(() => {
+        tg.ready();
+    }, [])
+
+    return (
         <div className="App">
             <Header />
             <Routes>
                 <Route index element={<ProductList />}/>
-                <Route path={'/Form'} element={<Form />}/>
+                <Route path={'form'} element={<Form />}/>
             </Routes>
         </div>
-      );
-    }
+    );
+}
 
     export default App;
